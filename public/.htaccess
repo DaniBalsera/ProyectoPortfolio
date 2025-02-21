@@ -1,0 +1,13 @@
+RewriteEngine On
+
+RewriteRule ^(css|script|imagenes|uploads)($|/) - [L]
+RewriteRule ^(.*)$ index.php [L]
+
+RewriteCond %{HTTP:Authorization} ^(.+)$
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+
+# Ignorar archivos estáticos (imágenes, CSS, JS, etc.)
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule \.(jpg|jpeg|png|gif|bmp|css|js|ico|svg|webp|woff|woff2|ttf|otf|eot)$ - [L]
+

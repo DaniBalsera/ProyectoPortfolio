@@ -1,0 +1,382 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(90deg, #74c3eb, #13354e); /* Fondo degradado */
+  color: #333;
+  padding: 20px;
+}
+
+/* Estilo para el header */
+header {
+  background: #1c1e2b; /* Fondo oscuro */
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* Estilo para el nav */
+nav {
+  display: flex;
+  justify-content: center;
+  background: #1f2a38; /* Fondo más oscuro */
+  padding: 12px 0;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Estilo para los botones */
+button,
+.button {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover,
+.button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Estilo para los formularios */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="password"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.1em;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+form button {
+  background: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+form button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Estilo para los enlaces */
+a.button {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+a.button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Estilo para el pie de página */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background: #1c1e2b;
+  color: #fff;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+/* Estilo para el perfil */
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.profile img {
+  border-radius: 50%;
+  margin-right: 20px;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.profile h4 {
+  margin: 0;
+  font-size: 1.7em;
+  color: #333;
+}
+
+/* Estilo para las tarjetas */
+.card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #007bff;
+  font-size: 2em;
+}
+
+.card h3 {
+  margin-top: 20px;
+  font-size: 1.6em;
+  color: #333;
+}
+
+.card p {
+  margin: 10px 0;
+  font-size: 1.1em;
+
+}
+
+.card button {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para los botones deshabilitados */
+.disabled-button {
+  background-color: #ccc !important;
+  color: #666 !important;
+  cursor: not-allowed !important;
+  opacity: 0.6 !important;
+}
+
+/* Estilo para los títulos de sección */
+.section-title {
+  display: flex;
+  color: #007bff;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+  border-bottom: 3px solid #007bff;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.add-button {
+  background-color: #007bff;
+  margin-left: 15px;
+  margin-right: 15px;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 1.1em;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para la categoría y contenido */
+.project, .social, .skill, .job-row {
+  border: 3px solid #0056b3;
+  border-radius: 12px;
+  padding: 15px;
+  background: linear-gradient(90deg, #ffffff, #61b9f8);
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+ 
+}
+
+/* Estilo para los títulos de categoría */
+.project-title,
+.social-title,
+.skill-title,
+.job-title {
+  background: #0056b3;
+  color: #ffffff;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+
+/* Descripción de los elementos */
+.project-description,
+.social-url,
+.skill-name,
+.job-description {
+  color: #000000;
+  font-size: 1.2em;
+}
+
+.skill-name {
+ 
+  margin-left: 5%;
+}
+
+/* Estilo para los logos de los proyectos */
+#project-logo {
+  width: 5vw;
+  height: 5vw;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+/* Estilo para las filas de los trabajos */
+.job-row {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Diseño flexible para las categorías */
+.contenedorCategoria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contenedorCategoria > * {
+  flex-grow: 1;
+  flex-basis: 200px; /* Ajustable según sea necesario */
+  min-width: 250px;
+  max-width: 350px;
+}
+
+/* Botones de acción */
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.buttons button {
+  flex: 1;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para los enlaces de redes sociales */
+.enlacesRedes a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.enlacesRedes a:hover {
+  color: #0056b3;
+}
+
+/* Cabecera de perfil */
+.header-profile {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-profile img {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.header-profile h4 {
+  margin: 0;
+  color: #fff;
+  font-size: 1.1em;
+}
